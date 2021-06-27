@@ -1,0 +1,138 @@
+.footer {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 1.5rem;
+  text-align: center;
+  
+  .container {
+
+    @include breakpoint-up(large){
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas: 
+        "logo btntop cta"
+        "social btntop copyright";
+      gap: 1rem;
+      justify-items: start;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .text {
+      float: right;
+      font-size: 0.9375rem;
+      font-weight: 400;
+      height: 0px;
+      color: $white;
+    }
+
+    @include breakpoint-down(medium){
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large){
+      grid-area: logo;
+    }
+  }
+
+  &__social {
+
+    @include breakpoint-down(medium){
+      margin-bottom: 1.875rem;
+    }
+    
+    @include breakpoint-up(large){
+      grid-area: social;
+      align-self: end;
+    }
+
+    a {      
+      display: inline-block;
+      height: 1.25rem;
+
+      svg path {
+        transition: fill 150ms ease-in-out;
+      }
+
+      &:hover svg path {
+        fill: $limeGreen;
+      }
+    }
+
+    a:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+  }
+
+  &__btntop{
+
+    @include breakpoint-up(large){
+      justify-self: center;
+      grid-area: btntop;
+    }
+
+    .text {
+      font-size: 0.9375rem;
+      font-weight: 300;
+      margin-top: 0.275rem;
+    }
+
+    svg path {
+      transition: fill 150ms ease-in-out;
+    }
+
+    a {
+      transition: color 150ms ease-in-out;
+      
+      &:hover svg path{
+        fill: $limeGreen;
+      }
+      &:hover {
+        color: $limeGreen;
+      }
+    }
+  }
+
+
+  &__cta {
+
+    @include breakpoint-up(large){
+      grid-area: cta;
+      text-align: right;
+      justify-self: end;
+    }
+
+    a.button {
+
+      @include breakpoint-down(medium){
+        margin-bottom: 1.875rem; 
+      }      
+
+    }
+  }
+
+  &__copyright {
+    font-size: 0.8125rem;
+    color: $grayishBlue;
+
+    @include breakpoint-up(large){
+      grid-area: copyright;
+      align-self: end;
+      justify-self: end;
+    }
+  }
+
+}
