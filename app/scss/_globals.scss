@@ -136,7 +136,7 @@ button, .button {
   position: relative;
   display: inline-block;
   padding: 0rem 2.1875rem;
-  background-image: linear-gradient(to left, $lightBlack, $lightBlue);
+  background-image: $gitHubColor;
   border: 0;
   border-radius: 50px;
   cursor: pointer;
@@ -162,7 +162,7 @@ button, .button {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.15);
     opacity: 0;
     transition: opacity 150ms ease-in-out;
   }
@@ -170,6 +170,7 @@ button, .button {
   &:hover::before {
     opacity: 1;
   }
+
 
 }
 

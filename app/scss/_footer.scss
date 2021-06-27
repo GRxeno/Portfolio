@@ -1,6 +1,6 @@
 .footer {
-  background-color: $darkBlue;
-  color: $white;
+  background-color: $header-footerColor;
+  color: $linksColor;
   padding: 1.5rem;
   text-align: center;
   
@@ -67,7 +67,7 @@
       }
 
       &:hover svg path {
-        fill: $limeGreen;
+        fill: $hilightColor;
       }
     }
 
@@ -98,10 +98,10 @@
       transition: color 150ms ease-in-out;
       
       &:hover svg path{
-        fill: $limeGreen;
+        fill: $hilightColor;
       }
       &:hover {
-        color: $limeGreen;
+        color: $hilightColor;
       }
     }
   }

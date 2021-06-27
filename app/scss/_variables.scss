@@ -1,13 +1,27 @@
 // Colors
-$darkBlue: hsl(252, 24%, 20%);
 $limeGreen: hsl(136, 65%, 51%);
 $brightCyan: hsl(192, 70%, 51%);
 $grayishBlue: hsl(233, 19%, 73%);
 $lightGrayishBlue: hsl(220, 16%, 96%);
 $veryLightGray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
-$lightBlack: hsl(0, 12%, 10%);
-$lightBlue: hsl(243, 57%, 21%);
+$lightBlack: hsl(239, 90%, 21%);
+
+$darkBlue: hsl(252, 67%, 19%);
+$lightBlue: hsl(243, 48%, 28%);
+
+// BG Colors
+$BGcolorOne: #e4e4e4;
+
+// Just Colors
+$gitHubColor: linear-gradient(to right, $darkBlue, $lightBlue);
+$header-footerColor: #070838;
+$linksColor: $white;
+$hilightColor: hsl(91, 100%, 50%);
+
+// Contact Form Colors
+$contactColorOne: #09093f;
+$contactCircle: #401492;
 
 // Font Sizes
 $font-sm: 0.875rem; // 14px

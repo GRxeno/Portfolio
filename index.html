@@ -28,7 +28,7 @@
         </a>
 
         <div class="header__links hide-for-mobile">
-          <a href="#">Home</a><a href="#">About Me</a><a href="#">My XP</a><a href="#">Journey</a><a href="#">Contact</a>
+          <a href="#">Home</a><a href="#">About Me</a><a href="#">My XP</a><a href="#">Journey</a><a href="#contact">Contact</a>
         </div>
 
         <a href="https://github.com/GRxeno/" class="button header__cta hide-for-mobile" target="_blank" rel="noopener noreferrer">
@@ -42,7 +42,7 @@
       <a href="">About Me</a>
       <a href="">My XP</a>
       <a href="">Journey</a>
-      <a href="">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
 
   </header>
@@ -176,7 +176,73 @@
   </div>
   </section>
 
-  
+
+  <section id="contact" class="contact">
+   <div class="container">
+     <span class="big-circle"></span>
+    <div class="form">
+      
+      <div class="contact-info"> 
+        <h3 class="title">Get in touch</h3>
+        <p class="text">
+          We can talk about your project and how i can help you. We can also 
+          talk talk about design, programming, rockets, games. Lastly shoot 
+          me a message if you found a bug on my projects, much appreciated, 
+          hope to hear from you :D
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="images/icons8-location.png" class="icon" alt="" />
+            <p class="info_text">Thessaloniki, Greece</p>
+          </div>
+          <div class="information">
+            <img src="images/icons8-mail.png" class="icon" alt="" />
+            <p class="info_text">xinipap@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form action="index.html">
+          <h3 class="title">Contact Me</h3>
+
+          <div class="input-container">
+            <input type="text" name="name" class="input">
+            <label for="">Name</label>
+            <span>Name</span>
+          </div>
+
+          <div class="input-container">
+            <input type="email" name="email" class="input">
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+
+          <div class="input-container">
+            <input type="text" name="subject" class="input">
+            <label for="">Subject</label>
+            <span>Subject</span>
+          </div>
+
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+
+          <input type="submit" value="Send" class="btnsnd">
+
+        </form>
+
+      </div>
+    </div>
+   </div> 
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -224,6 +290,7 @@
   </footer>
 
 
-  <script src="/app/js/script.js"></script>
+  <script src="/app/js/ham-menu-anim.js"></script>
+  <script src="/app/js/cont-form.js"></script>
 </body>
 </html>
