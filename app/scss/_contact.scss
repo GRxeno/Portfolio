@@ -1,12 +1,12 @@
 .contact{
-    background-color: $contactColor;
+    //background-color: $contactColor;
 
     .container{
         position: relative;
         width: 100%;
         min-height: 40rem;
         padding: 2rem;
-        background-color: $contactColor;
+        background-color: transparent;
         overflow: visible;
         display: flex;
         align-items: center;
@@ -233,7 +233,7 @@
         position: absolute;
         width: 360px;
         height: 360px;
-        background-color: $BGcolorOne;
+        background-color: $contactColor;
         border-radius: 50%;
         top: calc(50% - 180px);
         left: calc(50% - 180px);
