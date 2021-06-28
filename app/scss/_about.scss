@@ -1,10 +1,10 @@
 .about{
 
+    display: flex;
     text-align: center;
     color: $white;
     line-height: 1.5;
     letter-spacing: 1px;
-
 
     &__wrapper {
         min-height: 60vh;
@@ -28,13 +28,13 @@
         letter-spacing: 1.5px;
     }
 
-    article h1:after{
-        height: 5px;
-        width: 225px;
-        background-color: $white;
-        display: block;
-        margin: auto;
-    }
+    // article h1::after{
+    //     height: 5px;
+    //     width: 225px;
+    //     background-color: $white;
+    //     display: block;
+    //     margin: auto;
+    // }
 
     article img { 
         height: 200px;
@@ -44,14 +44,14 @@
         margin-top: 60px;
     }
 
-    blockquote{
-        font-size: 20px;
+    article p{
+        font-size: 16px;
         margin-top: 30px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 15%;
+        margin-right: 15%;
 
         @include breakpoint-down(medium){
-            font-size: 16px;
+            font-size: 13px;
             margin-left: 5%;
             margin-right: 5%;
         }

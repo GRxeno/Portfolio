@@ -531,6 +531,8 @@ button:hover::before, .button:hover::before {
 }
 
 .hero .check-list {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
   margin: 0;
   padding-left: 1.2rem;
 }
@@ -542,7 +544,7 @@ button:hover::before, .button:hover::before {
   margin-bottom: 0.5rem;
 }
 
-.hero .check-list li:before {
+.hero .check-list li::before {
   content: '';
   display: block;
   position: absolute;
@@ -567,6 +569,9 @@ button:hover::before, .button:hover::before {
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   color: white;
   line-height: 1.5;
@@ -597,14 +602,6 @@ button:hover::before, .button:hover::before {
   letter-spacing: 1.5px;
 }
 
-.about article h1:after {
-  height: 5px;
-  width: 225px;
-  background-color: white;
-  display: block;
-  margin: auto;
-}
-
 .about article img {
   height: 200px;
   width: 200px;
@@ -613,16 +610,16 @@ button:hover::before, .button:hover::before {
   margin-top: 60px;
 }
 
-.about blockquote {
-  font-size: 20px;
+.about article p {
+  font-size: 16px;
   margin-top: 30px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 @media (max-width: 63.9375em) {
-  .about blockquote {
-    font-size: 16px;
+  .about article p {
+    font-size: 13px;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -637,159 +634,18 @@ button:hover::before, .button:hover::before {
           transform: translateY(-15px);
 }
 
-.feature {
-  text-align: center;
+.XP {
+  background-color: red;
+  min-height: 100vh;
 }
 
-@media (min-width: 40em) {
-  .feature {
-    text-align: left;
-  }
+.journey {
+  background-color: yellow;
+  min-height: 100vh;
 }
 
-.feature__intro {
-  margin-bottom: 3.75rem;
-}
-
-@media (min-width: 64em) {
-  .feature__intro {
-    width: 60%;
-  }
-}
-
-@media (min-width: 40em) {
-  .feature__grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.feature__item {
-  padding: 0.9375rem;
-}
-
-@media (min-width: 40em) {
-  .feature__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 64em) {
-  .feature__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-}
-
-.feature__icon {
-  margin-bottom: 1.875rem;
-}
-
-@media (min-width: 64em) {
-  .feature__icon {
-    margin-bottom: 2.75rem;
-  }
-}
-
-.feature__title {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.15;
-  color: #1d1051;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 64em) {
-  .feature__title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-.feature__description {
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.articles {
-  background-color: transparent;
-}
-
-.article__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 1.875rem;
-}
-
-@media (min-width: 40em) {
-  .article__grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 64em) {
-  .article__grid {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.article__item {
-  border-radius: 0.3125rem;
-  overflow: hidden;
-  background-color: white;
-  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-}
-
-.article__item:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.article__image {
-  height: 12.5rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.article__text {
-  padding: 1.875rem 1.875rem 2.5rem 1.875rem;
-  color: #adb0c7;
-}
-
-@media (min-width: 40em) {
-  .article__text {
-    padding: 1.875rem 1.5625rem;
-  }
-}
-
-.article__author {
-  font-size: 0.625rem;
-  margin-bottom: 0.75rem;
-}
-
-.article__title {
-  font-size: 1.0625rem;
-  line-height: 1.2;
-  color: #1d1051;
-  margin-bottom: 0.5rem;
-}
-
-.article__description {
-  font-size: 0.8125rem;
+.contact {
+  background-color: #fafafa;
 }
 
 .contact .container {
@@ -1120,7 +976,7 @@ button:hover::before, .button:hover::before {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo btntop cta" "social btntop copyright";
+        grid-template-areas: "logo btntop cta" "social btntop copyright";
     gap: 1rem;
     justify-items: start;
   }
