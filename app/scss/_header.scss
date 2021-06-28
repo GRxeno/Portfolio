@@ -2,7 +2,8 @@
   position: fixed;
   right: 0px;
   left: 0px;
-  background-color: $header-footerColor;
+  //background-color: $footerColor;
+  background-color: black;
   z-index: 1000;
 
   // Hamburger Open Styles
@@ -30,12 +31,12 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: linear-gradient($header-footerColor, transparent);
+    background-image: linear-gradient($footerColor, transparent);
   }
 
   nav {
     position: relative;
-    background-color: $header-footerColor;
+    background-color: black;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
     z-index: 1000;
@@ -88,7 +89,7 @@
     a {
       display: block;
       padding: 0.625rem;
-      color: $header-footerColor;
+      color: $footerColor;
       text-align: center;
     }
   }
@@ -125,5 +126,15 @@
         }
       }
     }
+  }
+}
+
+.header.blueColor{
+  background-color: $footerColor;
+  transition: 0.5s;
+
+  nav {
+    background-color: $footerColor;
+    transition: 0.5s;
   }
 }

@@ -8,14 +8,19 @@ $white: hsl(0, 0%, 100%);
 $lightBlack: hsl(239, 90%, 21%);
 
 $darkBlue: hsl(252, 67%, 19%);
-$lightBlue: hsl(243, 48%, 28%);
+$lightBlue: hsl(242, 40%, 27%);
 
 // BG Colors
 $BGcolorOne: #e4e4e4;
 
 // Just Colors
+$footerColor: #070838;
+$aboutColor: #fafafa;
+$XPColor: #fafafa;
+$journeyColor: $footerColor;
+$contactColor: #fafafa;
+
 $gitHubColor: linear-gradient(to right, $darkBlue, $lightBlue);
-$header-footerColor: #070838;
 $linksColor: $white;
 $hilightColor: hsl(91, 100%, 50%);
 

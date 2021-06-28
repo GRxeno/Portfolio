@@ -4,7 +4,7 @@ const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
 
-btnHamburger.addEventListener('click', function(){
+function theListener(){
   console.log('click hamburger');
 
   if(header.classList.contains('open')){ // Close Hamburger Menu
@@ -25,4 +25,10 @@ btnHamburger.addEventListener('click', function(){
     });
 
   }  
+}
+
+btnHamburger.addEventListener('click', theListener);
+
+document.querySelectorAll('.option').forEach(element => {
+  element.addEventListener('click', theListener);
 });
