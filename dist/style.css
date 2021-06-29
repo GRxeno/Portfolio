@@ -108,7 +108,7 @@ body.noscroll {
 a.jumbTo {
   display: block;
   position: relative;
-  top: -89px;
+  top: -85px;
   visibility: hidden;
 }
 
@@ -635,13 +635,170 @@ button:hover::before, .button:hover::before {
 }
 
 .XP {
-  background-color: red;
+  background-color: black;
   min-height: 100vh;
+  color: white;
+  margin-bottom: -20px;
+}
+
+.XP .title {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  margin-left: 10%;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.XP h1, .XP h2, .XP h3 {
+  color: white;
+}
+
+.XP .container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+  background-color: black;
+}
+
+.XP .date {
+  color: white;
+}
+
+.XP .timeline {
+  width: 90%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.XP .timeline ul {
+  list-style: none;
+}
+
+.XP .timeline ul li {
+  padding: 20px;
+  background-color: #070838;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 63.9375em) {
+  .XP .timeline ul li {
+    padding: 15px;
+  }
+}
+
+.XP .timeline ul li:last-child {
+  margin-bottom: 10px;
+}
+
+.XP .timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 63.9375em) {
+  .XP .timeline-content h1 {
+    font-size: 20px;
+  }
+}
+
+.XP .timeline-content p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+@media (max-width: 63.9375em) {
+  .XP .timeline-content p {
+    font-size: 12px;
+  }
+}
+
+.XP .timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .XP .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: #b49d9d;
+  }
+  .XP .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .XP .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .XP .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .XP .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .XP .timeline ul li:nth-child(odd)::before {
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .XP .timeline ul li:nth-child(even)::before {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .XP .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .XP .timeline ul li:hover::before {
+    background-color: aqua;
+  }
 }
 
 .journey {
   background-color: yellow;
   min-height: 100vh;
+  color: black;
 }
 
 .contact {
