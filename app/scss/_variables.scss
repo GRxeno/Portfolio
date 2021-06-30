@@ -5,20 +5,18 @@ $grayishBlue: hsl(233, 19%, 73%);
 $lightGrayishBlue: hsl(220, 16%, 96%);
 $veryLightGray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
-$lightBlack: hsl(239, 90%, 21%);
+$black: hsl(0, 0%, 0%);
+$lightBlack: hsl(240, 65%, 3%);
 
 $darkBlue: hsl(252, 67%, 19%);
 $lightBlue: hsl(242, 40%, 27%);
 
-// BG Colors
-$BGcolorOne: #e4e4e4;
-
 // Just Colors
 $footerColor: #070838;
 $aboutColor: #fafafa;
-$XPColor: black;
-$journeyColor: $footerColor;
-$contactColor: #fafafa;
+$XPColor: transparent;
+$journeyColor: #07033b;
+$contactColor: $lightBlack;
 
 $gitHubColor: linear-gradient(to right, $darkBlue, $lightBlue);
 $linksColor: $white;
@@ -27,6 +25,11 @@ $hilightColor: hsl(91, 100%, 50%);
 // Contact Form Colors
 $contactColorOne: #09093f;
 $contactCircle: #401492;
+
+// BG Colors
+$BGcolorOne: #e4e4e4;
+$BGcolorTwo: linear-gradient( #000000, 85%, $journeyColor);
+$BGcolorThree: linear-gradient( $journeyColor, 85%, $lightBlack);
 
 // Font Sizes
 $font-sm: 0.875rem; // 14px

@@ -1,8 +1,10 @@
 .about{
 
+    $textColor: $white;
+
     display: flex;
     text-align: center;
-    color: $white;
+    color: $textColor;
     line-height: 1.5;
     letter-spacing: 1px;
 
@@ -21,7 +23,7 @@
 
     article h1{
         transform: translateY(3rem);
-        color: $white;
+        color: $textColor;
         font-size: 30px;
         font-weight: 800;
         text-transform: uppercase;
@@ -39,7 +41,7 @@
     article img { 
         height: 200px;
         width: 200px;
-        border: 2px solid $white;
+        border: 2px solid $textColor;
         border-radius: 50%;
         margin-top: 60px;
     }

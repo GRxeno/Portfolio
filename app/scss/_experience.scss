@@ -1,9 +1,8 @@
 .XP {
     background-color: $XPColor;
+    background-image: $BGcolorTwo;
     min-height: 100vh;
     color: white;
-
-    margin-bottom: -20px;
 
     .title{
         transform: translateY(60px);
