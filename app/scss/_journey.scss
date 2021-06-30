@@ -99,6 +99,18 @@
         letter-spacing: 2px;
       }
 
+      .TODO {
+        opacity: 0.25;
+      }
+
+      .age {
+        transform: translateY(6rem);
+        padding-left: 35rem;
+        @include breakpoint-down(medium){
+          padding-left: 2rem;
+        }
+      }
+
       @media only screen and (min-width: 768px) {
         .timeline:before {
           content: "";

@@ -581,8 +581,8 @@ button:hover::before, .button:hover::before {
 .about__wrapper {
   min-height: 60vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url(/images/BGabout.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/BGabout.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/BGabout.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/BGabout.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -796,6 +796,92 @@ button:hover::before, .button:hover::before {
   }
 }
 
+.skills {
+  background-color: #07033b;
+  min-height: 60vh;
+  list-style: none;
+}
+
+.skills__wrapper {
+  padding: 1.5rem 10rem;
+}
+
+@media (max-width: 63.9375em) {
+  .skills__wrapper {
+    padding: 1rem 2rem;
+  }
+}
+
+.skills .title {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  margin-left: 10%;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.skills h1, .skills h2, .skills h3 {
+  color: white;
+}
+
+.skills .skills-bar {
+  background: #fafafa;
+  display: block;
+  height: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #000000b0;
+          box-shadow: 0 0 10px #000000b0;
+}
+
+.skills .skills-bar span {
+  height: 0.6rem;
+  float: left;
+  background: #401492;
+}
+
+.skills .bar1 {
+  width: 70%;
+}
+
+.skills .bar2 {
+  width: 65%;
+}
+
+.skills .bar3 {
+  width: 40%;
+}
+
+.skills .bar4 {
+  width: 60%;
+}
+
+.skills .bar5 {
+  width: 30%;
+}
+
+.skills .bar6 {
+  width: 50%;
+}
+
+.skills .bar7 {
+  width: 90%;
+}
+
+.skills .bar8 {
+  width: 10%;
+}
+
+.skills .bar9 {
+  width: 90%;
+}
+
+.skills .bar10 {
+  width: 10%;
+}
+
 .journey {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#07033b), color-stop(85%), to(#03030d));
   background-image: linear-gradient(#07033b, 85%, #03030d);
@@ -911,6 +997,22 @@ button:hover::before, .button:hover::before {
   letter-spacing: 2px;
 }
 
+.journey .TODO {
+  opacity: 0.25;
+}
+
+.journey .age {
+  -webkit-transform: translateY(6rem);
+          transform: translateY(6rem);
+  padding-left: 35rem;
+}
+
+@media (max-width: 63.9375em) {
+  .journey .age {
+    padding-left: 2rem;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .journey .timeline:before {
     content: "";
@@ -971,7 +1073,7 @@ button:hover::before, .button:hover::before {
 }
 
 .contact {
-  background-color: #03030d;
+  background-color: #111142;
 }
 
 .contact .container {
@@ -1009,13 +1111,13 @@ button:hover::before, .button:hover::before {
 }
 
 .contact .contact-form {
-  background-color: #09093f;
+  background-color: #401492;
   position: relative;
 }
 
 .contact .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #401492);
+  background: linear-gradient(135deg, transparent 20%, #09093f);
   position: absolute;
 }
 
@@ -1038,7 +1140,7 @@ button:hover::before, .button:hover::before {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #09093f;
+  background-color: #401492;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 50px;
@@ -1115,7 +1217,7 @@ button:hover::before, .button:hover::before {
   background-color: white;
   border: 2px solid #e4e4e4;
   font-size: 0.95rem;
-  color: #09093f;
+  color: #401492;
   line-height: 1;
   border-radius: 20px;
   outline: none;
@@ -1152,7 +1254,7 @@ button:hover::before, .button:hover::before {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 7.5px;
-  background-color: #09093f;
+  background-color: #401492;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1186,7 +1288,7 @@ button:hover::before, .button:hover::before {
 }
 
 .contact .contact-info .title {
-  color: #09093f;
+  color: #401492;
 }
 
 .contact .text {

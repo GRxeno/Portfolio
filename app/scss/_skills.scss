@@ -1,0 +1,75 @@
+.skills {
+    background-color: $journeyColor;
+    min-height: 60vh;
+    list-style: none;
+
+    &__wrapper{
+        padding: 1.5rem 10rem;
+        // border: 2px solid magenta;
+        @include breakpoint-down(medium){
+            padding: 1rem 2rem;
+          }
+    }
+
+    .title{
+        transform: translateY(60px);
+        margin-left: 10%;
+        
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+    }
+
+    h1,h2,h3{
+        color: white;
+    }
+
+    .skills-bar {
+        background: #fafafa;
+        display: block;
+        height: 0.6rem;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #000000b0;
+    }
+
+    .skills-bar span {
+        height: 0.6rem;
+        float: left;
+        background: $contactColorOne;
+    }
+
+    .bar1{
+        width: $bar1;
+    }
+    .bar2{
+        width: $bar2;
+    }
+    .bar3{
+        width: $bar3;
+    }
+    .bar4{
+        width: $bar4;
+    }
+    .bar5{
+        width: $bar5;
+    }
+    .bar6{
+        width: $bar6;
+    }
+    .bar7{
+        width: $bar7;
+    }
+    .bar8{
+        width: $bar8;
+    }
+    .bar9{
+        width: $bar7;
+    }
+    .bar10{
+        width: $bar8;
+    }
+
+
+}

@@ -16,15 +16,15 @@ $footerColor: #070838;
 $aboutColor: #fafafa;
 $XPColor: transparent;
 $journeyColor: #07033b;
-$contactColor: $lightBlack;
+$contactColor: #111142;
 
 $gitHubColor: linear-gradient(to right, $darkBlue, $lightBlue);
 $linksColor: $white;
 $hilightColor: hsl(91, 100%, 50%);
 
 // Contact Form Colors
-$contactColorOne: #09093f;
-$contactCircle: #401492;
+$contactColorOne: #401492;
+$contactCircle: #09093f;
 
 // BG Colors
 $BGcolorOne: #e4e4e4;
@@ -36,3 +36,15 @@ $font-sm: 0.875rem; // 14px
 $font-med: 1.125rem; // 18px
 $font-lg: 1.25rem;
 $font-xlg: 3.25rem;
+
+// Bars
+$bar1: 70%; // C
+$bar2: 65%; // Java
+$bar3: 40%; // C++
+$bar4: 60%; // Python
+$bar5: 30%; // HTML/CSS
+$bar6: 50%; // Adobe apps
+$bar7: 90%;
+$bar8: 10%;
+$bar9: 90%;
+$bar10: 10%;
