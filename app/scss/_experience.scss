@@ -126,11 +126,11 @@
         }
         .timeline ul li:nth-child(odd)::before {
           transform: translate(50%, -50%);
-          right: -10px;
+          right: -30px;
         }
         .timeline ul li:nth-child(even)::before {
           transform: translate(-50%, -50%);
-          left: -50px;
+          left: -30px;
         }
         .timeline-content .date {
           position: absolute;

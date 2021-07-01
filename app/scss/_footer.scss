@@ -91,7 +91,6 @@
     .text {
       font-size: 0.9375rem;
       font-weight: 300;
-      transform: translateY(0.5rem);
     }
 
     svg path {
@@ -146,7 +145,7 @@
     transform: translateY(0);
   }
   50%{
-    transform: translateY(1rem);
+    transform: translateY(0.5em);
   }
   to {
     transform: translateY(0);

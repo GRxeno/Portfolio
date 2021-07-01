@@ -303,6 +303,8 @@ button:hover::before, .button:hover::before {
   left: 0px;
   background-color: black;
   z-index: 1000;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .header.open .header__toggle > span:first-child {
@@ -866,12 +868,12 @@ button:hover::before, .button:hover::before {
   .XP .timeline ul li:nth-child(odd)::before {
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
-    right: -10px;
+    right: -30px;
   }
   .XP .timeline ul li:nth-child(even)::before {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    left: -50px;
+    left: -30px;
   }
   .XP .timeline-content .date {
     position: absolute;
@@ -911,6 +913,15 @@ button:hover::before, .button:hover::before {
   color: white;
 }
 
+.skills h4, .skills h5 {
+  display: inline-block;
+}
+
+.skills h5 {
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
+}
+
 .skills .skills-bar {
   background: #fafafa;
   display: block;
@@ -920,6 +931,7 @@ button:hover::before, .button:hover::before {
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px #000000b0;
           box-shadow: 0 0 10px #000000b0;
+  margin-top: -1rem;
 }
 
 .skills .skills-bar span {
@@ -1142,12 +1154,12 @@ button:hover::before, .button:hover::before {
   .journey .timeline ul li:nth-child(odd)::before {
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
-    right: -10px;
+    right: -30px;
   }
   .journey .timeline ul li:nth-child(even)::before {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    left: -50px;
+    left: -30px;
   }
   .journey .timeline-content .date {
     position: absolute;
@@ -1554,8 +1566,6 @@ button:hover::before, .button:hover::before {
 .footer__btntop .text {
   font-size: 0.9375rem;
   font-weight: 300;
-  -webkit-transform: translateY(0.5rem);
-          transform: translateY(0.5rem);
 }
 
 .footer__btntop svg path {
@@ -1613,8 +1623,8 @@ button:hover::before, .button:hover::before {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(1rem);
-            transform: translateY(1rem);
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
   }
   to {
     -webkit-transform: translateY(0);
@@ -1628,8 +1638,8 @@ button:hover::before, .button:hover::before {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(1rem);
-            transform: translateY(1rem);
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
   }
   to {
     -webkit-transform: translateY(0);

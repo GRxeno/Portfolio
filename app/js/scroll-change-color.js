@@ -1,13 +1,21 @@
+const sectionOne = document.querySelector(".hero");
 
-window.onscroll = function(){
-    var top = window.scrollY;
-    console.log(top);
+const sectionOneOptions = {
+  rootMargin: "-200px 0px 0px 0px"
+};
 
-    if(top > 570){
-        header.classList.add('blueColor');
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add('blueColor');
+    } else {
+      header.classList.remove('blueColor');
     }
-    else{
-        header.classList.remove('blueColor');
-    }
+  });
+},
+sectionOneOptions);
 
-}
+sectionOneObserver.observe(sectionOne);
