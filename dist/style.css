@@ -568,6 +568,92 @@ button:hover::before, .button:hover::before {
           box-sizing: border-box;
 }
 
+.hero h1 {
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media (max-width: 63.9375em) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.hero h1::before,
+.hero h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero h1::before {
+  background: black;
+  -webkit-animation: typewriter 4s steps(17) 1s forwards;
+          animation: typewriter 4s steps(17) 1s forwards;
+}
+
+.hero h1::after {
+  width: 0.125em;
+  background: white;
+  -webkit-animation: typewriter 4s steps(17) 1s forwards, blink 750ms steps(17) infinite;
+          animation: typewriter 4s steps(17) 1s forwards, blink 750ms steps(17) infinite;
+}
+
+.hero .subtitle {
+  opacity: 0;
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  -webkit-animation: fadeInAndUp 2s ease 5.5s forwards;
+          animation: fadeInAndUp 2s ease 5.5s forwards;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@-webkit-keyframes fadeInAndUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInAndUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,12 +866,12 @@ button:hover::before, .button:hover::before {
   .XP .timeline ul li:nth-child(odd)::before {
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
-    right: -30px;
+    right: -10px;
   }
   .XP .timeline ul li:nth-child(even)::before {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    left: -30px;
+    left: -50px;
   }
   .XP .timeline-content .date {
     position: absolute;
@@ -1056,12 +1142,12 @@ button:hover::before, .button:hover::before {
   .journey .timeline ul li:nth-child(odd)::before {
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
-    right: -30px;
+    right: -10px;
   }
   .journey .timeline ul li:nth-child(even)::before {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    left: -30px;
+    left: -50px;
   }
   .journey .timeline-content .date {
     position: absolute;
@@ -1452,6 +1538,11 @@ button:hover::before, .button:hover::before {
   margin-right: 1.5rem;
 }
 
+.footer__btntop .icon {
+  -webkit-animation: UpAndDown 1s infinite;
+          animation: UpAndDown 1s infinite;
+}
+
 @media (min-width: 64em) {
   .footer__btntop {
     -ms-grid-column-align: center;
@@ -1463,7 +1554,8 @@ button:hover::before, .button:hover::before {
 .footer__btntop .text {
   font-size: 0.9375rem;
   font-weight: 300;
-  margin-top: 0.275rem;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
 }
 
 .footer__btntop svg path {
@@ -1512,6 +1604,36 @@ button:hover::before, .button:hover::before {
         align-self: end;
     -ms-grid-column-align: end;
         justify-self: end;
+  }
+}
+
+@-webkit-keyframes UpAndDown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes UpAndDown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

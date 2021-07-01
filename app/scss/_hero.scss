@@ -1,5 +1,10 @@
+$bg-color: black;
+$typewriterSpeed: 4s;
+$subDelay: 5.5s;
+$typewriterCharacters: 17;
+
 .hero {
-  background-color: black;
+  background-color: $bg-color;
   z-index: 100;
 
   .container {
@@ -131,6 +136,68 @@
   *:before,
   *:after {
     box-sizing: border-box;
+  }
+
+    
+  h1 {
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+
+    @include breakpoint-down(medium){
+      font-size: 1.5rem;
+    }
+
+  }
+
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  h1::before {
+    background: $bg-color;
+    animation: typewriter $typewriterSpeed
+      steps($typewriterCharacters) 1s forwards;
+  }
+
+  h1::after {
+    width: 0.125em;
+    background: $white;
+    animation: typewriter $typewriterSpeed
+        steps($typewriterCharacters) 1s forwards,
+      blink 750ms steps($typewriterCharacters) infinite;
+  }
+
+  .subtitle {
+    opacity: 0;
+    transform: translateY(4rem);
+    animation: fadeInAndUp 2s ease $subDelay forwards;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+
+  @keyframes fadeInAndUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
 }
