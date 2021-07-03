@@ -75,7 +75,8 @@
     </div>
   </section>
 
-  <!-- XP Design: https://www.youtube.com/watch?v=zNccqv0g6Q4 -->
+  <!-- Timeline Design: https://www.youtube.com/watch?v=zNccqv0g6Q4 -->
+  <!-- Timeline Animation: https://www.youtube.com/watch?v=huVJW23JHKQ -->
   <section class="XP">
     <a id="XP" class="jumbTo"></a>
     <div class="title">
@@ -86,7 +87,7 @@
       <div class="timeline">
         <ul>
           
-          <li>
+          <li class="slide-in">
             <div class="timeline-content">
               <h3 class="date">Summer 2019 & Summer 2020</h3>
               <h1>Robotics Teacher @ ELAIONES</h1>
@@ -101,18 +102,18 @@
             </div>
           </li>
           
-          <li>
+          <li class="slide-in">
             <div class="timeline-content">
               <h3 class="date">Summer 2021</h3>
               <h1>Freelancing !?</h1>
               <p>
                 I did not want to sit the whole summer and learn nothing so I created this
-                website. I also improved some of my GitHub projects and built a chess game.
+                website. I also improved some of my GitHub projects and built new apps.
               </p>
             </div>
           </li>
 
-          <li>
+          <li class="slide-in">
             <div class="timeline-content">
               <h3 class="date">Currently</h3>
               <h1>Chilling</h1>
@@ -137,7 +138,7 @@
     <div class="skills__wrapper">
       
       <li><h4>C</h4><h5>70%</h5><span class="skills-bar"><span class="bar1"></span></span></li>
-      <li><h4>JAVA</h4><h5>65%</h5><span class="skills-bar"><span class="bar2"></span></span></li>
+      <li><h4>JAVA</h4><h5>80%</h5><span class="skills-bar"><span class="bar2"></span></span></li>
       <li><h4>C++</h4><h5>40%</h5><span class="skills-bar"><span class="bar3"></span></span></li>
       <li><h4>Python</h4><h5>60%</h5><span class="skills-bar"><span class="bar4"></span></span></li>
       <li><h4>HTML/CSS</h4><h5>30%</h5><span class="skills-bar"><span class="bar5"></span></span></li>
@@ -146,21 +147,18 @@
     </div>
   </section>
 
-  <!-- Journey Design: https://www.youtube.com/watch?v=zNccqv0g6Q4 -->
   <section class="journey">
     <a id="journey" class="jumbTo"></a>
   
     <div class="title">
       <h2>My Journey</h2>
     </div>
-    <!-- <div class="age"> -->
       <h4 class="age" id="j_age">I am X years old</h4>
-    <!-- </div> -->
     <div class="container">
       <div class="timeline">
         <ul>
           
-          <li>
+          <li class="slide-in">
             <div class="timeline-content">
               <h3 class="date">@ Age 15</h3>
               <h1>Built 1st PC</h1>
@@ -173,7 +171,7 @@
             </div>
           </li>
           
-          <li>
+          <li class="slide-in">
             <div class="timeline-content">
               <h3 class="date">@ Age 18</h3>
               <h1>CS Bachelor's Degree</h1>
@@ -185,7 +183,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="slide-in">
             <div class="timeline-content TODO">
               <h3 class="date">@ Age 22</h3>
               <h1>Wrote my Thesis</h1>
@@ -196,7 +194,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="slide-in">
             <div class="timeline-content TODO">
               <h3 class="date">@ Age 23</h3>
               <h1>Military Obligations</h1>
@@ -207,7 +205,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="slide-in">
             <div class="timeline-content TODO">
               <h3 class="date">@ Age 24</h3>
               <h1>MSc Degree</h1>
@@ -286,35 +284,35 @@
         <span class="circle one"></span>
         <span class="circle two"></span>
 
-        <form action="index.html">
+        <form action="index.html" method="POST">
           <h3 class="title">Contact Me</h3>
 
           <div class="input-container">
-            <input type="text" name="name" class="input">
+            <input type="text" name="name" class="input" required>
             <label for="">Name</label>
             <span>Name</span>
           </div>
 
           <div class="input-container">
-            <input type="email" name="email" class="input">
+            <input type="email" name="email" class="input" required>
             <label for="">Email</label>
             <span>Email</span>
           </div>
 
           <div class="input-container">
-            <input type="text" name="subject" class="input">
+            <input type="text" name="subject" class="input" required>
             <label for="">Subject</label>
             <span>Subject</span>
           </div>
 
           <div class="input-container textarea">
-            <textarea name="message" class="input"></textarea>
+            <textarea name="message" class="input" required></textarea>
             <label for="">Message</label>
             <span>Message</span>
           </div>
 
-          <!-- <input type="submit" value="Send" class="btnsnd"> -->
-          <a class="btnsnd">Send</a>
+          <input type="submit" value="Send" class="btnsnd">
+          <!-- <button type="submit" class="btnsnd">Send</button> -->
 
         </form>
 
@@ -372,7 +370,7 @@
   
   <script src="/app/js/ham-menu-anim.js"></script>
   <script src="/app/js/cont-form.js"></script>
-  <script src="/app/js/scroll-change-color.js"></script>
+  <script src="/app/js/scroll-anim.js"></script>
   <script src="/app/js/change-age.js"></script>
 </body>
 </html>
