@@ -2,10 +2,9 @@
   position: fixed;
   right: 0px;
   left: 0px;
-  //background-color: $footerColor;
   background-color: black;
   z-index: 1000;
-  box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.2);
+  box-shadow: 0 10px 20px rgba($color: black, $alpha: 0.2);
 
 
   // Hamburger Open Styles

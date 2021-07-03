@@ -31,18 +31,22 @@ function findAge(current_date, current_month, current_year, birth_date, birth_mo
     return calculated_year;
 }
 
-n =  new Date();
+var calculatedAge = false;
+if (!calculatedAge){
+	// get current date
+	n =  new Date();
+	// current dd// mm/yyyy
+	var current_date = n.getDate();
+	var current_month = n.getMonth() + 1;
+	var current_year = n.getFullYear();
+	// birth dd// mm// yyyy
+	var birth_date = 23;
+	var birth_month = 3;
+	var birth_year = 1999;
 
-// driver code to check the above function
-// current dd// mm/yyyy
-var current_date = n.getDate();
-var current_month = n.getMonth() + 1;
-var current_year = n.getFullYear();
-// birth dd// mm// yyyy
-var birth_date = 23;
-var birth_month = 3;
-var birth_year = 1999;
-// function call to prvar age
-y = findAge(current_date, current_month, current_year, birth_date, birth_month, birth_year);
+	// function call to prvar age
+	y = findAge(current_date, current_month, current_year, birth_date, birth_month, birth_year);
 
-document.getElementById("j_age").innerHTML = "I am " + y + " years old";
+	document.getElementById("j_age").innerHTML = "I am " + y + " years old";
+	calculatedAge = true;
+}

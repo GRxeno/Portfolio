@@ -37,3 +37,40 @@
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards;
 }
+
+@keyframes bar1 {
+  0%{ width: 0%;}
+  100%{ width: $bar1;}
+}
+@keyframes bar2 {
+  0%{ width: 0%;}
+  100%{ width: $bar2;}
+}
+@keyframes bar3 {
+  0%{ width: 0%;}
+  100%{ width: $bar3;}
+}
+@keyframes bar4 {
+  0%{ width: 0%;}
+  100%{ width: $bar4;}
+}
+@keyframes bar5 {
+  0%{ width: 0%;}
+  100%{ width: $bar5;}
+}
+@keyframes bar6 {
+  0%{ width: 0%;}
+  100%{ width: $bar6;}
+}
+@keyframes bar7 {
+  0%{ width: 0%;}
+  100%{ width: $bar7;}
+}
+@keyframes bar8 {
+  0%{ width: 0%;}
+  100%{ width: $bar8;}
+}
+@keyframes bar9 {
+  0%{ width: 0%;}
+  100%{ width: $bar9;}
+}

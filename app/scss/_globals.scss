@@ -38,7 +38,7 @@ a.jumbTo {
 h1, h2, h3 {
   font-weight: 300;
   line-height: 1.15;
-  color: $darkBlue;
+  color: $white;
   margin-top: 0px;
 }
 
@@ -136,6 +136,15 @@ a, a:visited, a:hover {
   &-ai-c {
     align-items: center;
   }
+}
+
+.title{
+  width: 100%;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  align-self: flex-start;
+  margin-left: 20px;
 }
 
 // Buttons

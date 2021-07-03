@@ -1,30 +1,10 @@
 .journey {
     background-image: $BGcolorThree;
     min-height: 100vh;
-    color: $white;
-
-    .title{
-        transform: translateY(60px);
-        margin-left: 10%;
-        
-        font-size: 30px;
-        font-weight: 800;
-        letter-spacing: 1.5px;
-    }
-
-    h1,h2,h3{
-        color: white;
-    }
 
     .container {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 100px 0;
-        background-color: $XPColor;
-      }
+      padding: 100px 0;
+    }   
 
       .timeline ul li {
         background-color: $lightBlue;
@@ -36,11 +16,14 @@
 
       // I am X years old.
       .age {
-        transform: translateY(6rem);
-        padding-left: 35rem;
-        @include breakpoint-down(medium){
-          padding-left: 2rem;
-        }
+        color: $white;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        align-self: center;
+        margin-left: 50px;
+        margin-bottom: 50px;
       }
 
 }

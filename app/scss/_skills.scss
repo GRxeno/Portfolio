@@ -1,35 +1,26 @@
 .skills {
     background-color: $journeyColor;
     min-height: 60vh;
-    list-style: none;
+    list-style: none; 
 
-    &__wrapper{
-        padding: 1.5rem 10rem;
-        // border: 2px solid magenta;
-        @include breakpoint-down(medium){
-            padding: 1rem 2rem;
-          }
+    .container {
+        padding-top: 100px;
     }
 
-    .title{
-        transform: translateY(60px);
-        margin-left: 10%;
-        margin-bottom: 40px;
-        
-        font-size: 30px;
-        font-weight: 800;
-        letter-spacing: 1.5px;
-    }
+    .stat{ 
+        display: flex;
+        justify-content: space-between;
 
-    h1,h2,h3{
-        color: white;
-    }
-
-    h4,h5 {
-        display: inline-block;
-    }
-    h5{
-        transform: translateX(2rem);
+        h4,h5 {
+            margin: 0.5rem 3.4rem;
+            @include breakpoint-down(medium){
+                margin: 0.5rem 2.2rem;
+            }
+        }
+        h5{
+            margin-bottom: 0;
+            transform: translateY(0.6rem);
+        }
     }
 
     .skills-bar {
@@ -41,6 +32,11 @@
         overflow: hidden;
         box-shadow: 0 0 10px #000000b0;
         margin-top: -1rem;
+
+        margin: 0 3rem;
+        @include breakpoint-down(medium){
+            margin: 0 2rem;
+        }
     }
 
     .skills-bar span {
@@ -49,35 +45,41 @@
         background: $contactColorOne;
     }
 
-    .bar1{
+    .bar_1{
         width: $bar1;
+        animation: bar1 2s forwards;
     }
-    .bar2{
+    .bar_2{
         width: $bar2;
+        animation: bar2 2s forwards;
     }
-    .bar3{
+    .bar_3{
         width: $bar3;
+        animation: bar3 2s forwards;
     }
-    .bar4{
+    .bar_4{
         width: $bar4;
+        animation: bar4 2s forwards;
     }
-    .bar5{
+    .bar_5{
         width: $bar5;
+        animation: bar5 2s forwards;
     }
-    .bar6{
+    .bar_6{
         width: $bar6;
+        animation: bar6 2s forwards;
     }
-    .bar7{
+    .bar_7{
         width: $bar7;
+        animation: bar7 2s forwards;
     }
-    .bar8{
+    .bar_8{
         width: $bar8;
+        animation: bar8 2s forwards;
     }
-    .bar9{
+    .bar_9{
         width: $bar9;
-    }
-    .bar10{
-        width: $bar10;
+        animation: bar9 2s forwards;
     }
 
 
