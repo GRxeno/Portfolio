@@ -30,6 +30,8 @@ $contactCircle: #09093f;
 $BGcolorOne: #e4e4e4;
 $BGcolorTwo: linear-gradient( #000000, 85%, $journeyColor);
 $BGcolorThree: linear-gradient( $journeyColor, 85%, $lightBlack);
+$BGcolorFour: linear-gradient($lightBlack, 85%, $contactColor);
+$BGcolorFive: linear-gradient($contactColor, 85%, $black);
 
 // Font Sizes
 $font-sm: 0.875rem; // 14px

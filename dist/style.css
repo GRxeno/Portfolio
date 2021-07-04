@@ -572,7 +572,6 @@ a, a:visited, a:hover {
 }
 
 .title {
-  width: 100%;
   font-size: 30px;
   font-weight: 800;
   letter-spacing: 1.5px;
@@ -1010,12 +1009,9 @@ button:hover::before, .button:hover::before {
 
 .about__wrapper {
   min-height: 60vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#03030d), color-stop(85%), to(#111142));
+  background: linear-gradient(#03030d, 85%, #111142);
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/BGabout.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/BGabout.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .about__quote {
@@ -1207,7 +1203,6 @@ button:hover::before, .button:hover::before {
 
 .journey .age {
   color: white;
-  width: 100%;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1.5px;
