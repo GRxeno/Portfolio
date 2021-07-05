@@ -3,7 +3,10 @@
     min-height: 100vh;
 
     .container {
-      padding: 100px 0;
+      padding-bottom: 100px;
+      @include breakpoint-down(medium){
+        padding-top: 100px;
+      }
     }   
 
       .timeline ul li {

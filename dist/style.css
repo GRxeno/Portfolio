@@ -319,6 +319,12 @@
   letter-spacing: 2px;
 }
 
+@media (max-width: 63.9375em) {
+  .timeline-content .date {
+    margin-top: 14px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .timeline:before {
     content: "";
@@ -484,7 +490,7 @@ a, a:visited, a:hover {
 }
 
 .container {
-  max-width: 69.375rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
@@ -815,7 +821,7 @@ button:hover::before, .button:hover::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/images/hacker.png");
+  background-image: url("/images/hacker.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -1009,8 +1015,8 @@ button:hover::before, .button:hover::before {
 
 .about__wrapper {
   min-height: 60vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#03030d), color-stop(85%), to(#111142));
-  background: linear-gradient(#03030d, 85%, #111142);
+  background: -webkit-gradient(linear, left top, left bottom, from(#08081c), color-stop(85%), to(#111142));
+  background: linear-gradient(#08081c, 85%, #111142);
   width: 100%;
 }
 
@@ -1184,13 +1190,19 @@ button:hover::before, .button:hover::before {
 }
 
 .journey {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#07033b), color-stop(85%), to(#03030d));
-  background-image: linear-gradient(#07033b, 85%, #03030d);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#07033b), color-stop(85%), to(#08081c));
+  background-image: linear-gradient(#07033b, 85%, #08081c);
   min-height: 100vh;
 }
 
 .journey .container {
-  padding: 100px 0;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 63.9375em) {
+  .journey .container {
+    padding-top: 100px;
+  }
 }
 
 .journey .timeline ul li {
