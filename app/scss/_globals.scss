@@ -151,16 +151,17 @@ button, .button {
   position: relative;
   display: inline-block;
   padding: 0rem 2.1875rem;
-  background-image: $gitHubColor;
   font-size: $font-sm;  
-
-  border: 0;
-  border-radius: 50px;
   cursor: pointer;
   color: $white;
-  font-weight: 400;  
-  transition: opacity 300ms ease-in-out;
-  overflow: hidden;
+  font-weight: 400;
+  
+  background: $gitHubColor;
+  text-decoration: none;
+  border: $clr-neon 0.125em solid;
+  border-radius: 2.5em;
+  // text-shadow: 0 0 0.125em hsl(0, 0%, 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 $clr-neon, 0 0 0.5em 0 $clr-neon;
 
   .text {
     float: right;
@@ -171,20 +172,33 @@ button, .button {
     transform: translateY(10px);
   }
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.15);
+    right: 0;
+    border-radius: 2.5em;
+    box-shadow: 0 0 2em 0.5em $clr-neon;
     opacity: 0;
-    transition: opacity 150ms ease-in-out;
+    background-color: $clr-neon;
+    z-index: -1;
+    transition: opacity 100ms linear;
   }
 
-  &:hover::before {
-    opacity: 1;
+  &:hover,
+  &:hover svg path,
+  &:focus {
+    background: none;
+    color: $black;
+    text-shadow: none;
+    fill: $black;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.85;
   }
 
 

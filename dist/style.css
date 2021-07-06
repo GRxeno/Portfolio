@@ -590,17 +590,16 @@ button, .button {
   position: relative;
   display: inline-block;
   padding: 0rem 2.1875rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#1d1051), to(#2b2960));
-  background-image: linear-gradient(to right, #1d1051, #2b2960);
-  border: 0;
-  border-radius: 50px;
+  font-size: 0.875rem;
   cursor: pointer;
   color: white;
   font-weight: 400;
-  font-size: 0.875rem;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-  overflow: hidden;
+  background: #0e0047;
+  text-decoration: none;
+  border: #5d00d6 0.125em solid;
+  border-radius: 2.5em;
+  -webkit-box-shadow: inset 0 0 0.5em 0 #5d00d6, 0 0 0.5em 0 #5d00d6;
+          box-shadow: inset 0 0 0.5em 0 #5d00d6, 0 0 0.5em 0 #5d00d6;
 }
 
 button .text, .button .text {
@@ -615,21 +614,34 @@ button .img, .button .img {
           transform: translateY(10px);
 }
 
-button::before, .button::before {
+button::after, .button::after {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.15);
+  right: 0;
+  border-radius: 2.5em;
+  -webkit-box-shadow: 0 0 2em 0.5em #5d00d6;
+          box-shadow: 0 0 2em 0.5em #5d00d6;
   opacity: 0;
-  -webkit-transition: opacity 150ms ease-in-out;
-  transition: opacity 150ms ease-in-out;
+  background-color: #5d00d6;
+  z-index: -1;
+  -webkit-transition: opacity 100ms linear;
+  transition: opacity 100ms linear;
 }
 
-button:hover::before, .button:hover::before {
-  opacity: 1;
+button:hover,
+button:hover svg path, button:focus, .button:hover,
+.button:hover svg path, .button:focus {
+  background: none;
+  color: black;
+  text-shadow: none;
+  fill: black;
+}
+
+button:hover::after, button:focus::after, .button:hover::after, .button:focus::after {
+  opacity: 0.85;
 }
 
 @media (max-width: 63.9375em) {
@@ -1445,7 +1457,7 @@ button:hover::before, .button:hover::before {
 }
 
 .contact .text {
-  color: #1d1051;
+  color: #0e0047;
   margin: 1.5rem 0 2rem 0;
 }
 
@@ -1453,7 +1465,7 @@ button:hover::before, .button:hover::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #1d1051;
+  color: #0e0047;
   margin: 0 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1639,6 +1651,10 @@ button:hover::before, .button:hover::before {
 
 .footer__btntop a:hover {
   color: #7bff00;
+}
+
+.footer__cta {
+  z-index: 0;
 }
 
 @media (min-width: 64em) {

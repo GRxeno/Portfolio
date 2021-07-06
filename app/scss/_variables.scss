@@ -8,7 +8,7 @@ $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $lightBlack: hsl(240, 57%, 7%);
 
-$darkBlue: hsl(252, 67%, 19%);
+$darkBlue: hsl(252, 100%, 14%);
 $lightBlue: hsl(242, 40%, 27%);
 
 // Just Colors
@@ -18,7 +18,8 @@ $XPColor: transparent;
 $journeyColor: #07033b;
 $contactColor: #111142;
 
-$gitHubColor: linear-gradient(to right, $darkBlue, $lightBlue);
+$gitHubColor: $darkBlue;
+$clr-neon: hsl(266, 100%, 42%);
 $linksColor: $white;
 $hilightColor: hsl(91, 100%, 50%);
 

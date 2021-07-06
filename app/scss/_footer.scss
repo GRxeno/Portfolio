@@ -111,6 +111,7 @@
 
 
   &__cta {
+    z-index: 0;
 
     @include breakpoint-up(large){
       grid-area: cta;
