@@ -11,7 +11,7 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr auto;
       grid-template-areas: 
-        "logo btntop cta"
+        "logo btntop cv"
         "social btntop copyright";
       gap: 1rem;
       justify-items: start;
@@ -110,13 +110,17 @@
   }
 
 
-  &__cta {
+  &__cv {
     z-index: 0;
 
     @include breakpoint-up(large){
-      grid-area: cta;
+      grid-area: cv;
       text-align: right;
       justify-self: end;
+    }
+
+    a:not(:last-child) {
+      margin-right: 10px;
     }
 
     a.button {

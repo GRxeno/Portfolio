@@ -32,7 +32,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: linear-gradient($footerColor, transparent);
+    background: linear-gradient($footerColor, transparent);
   }
 
   nav {
@@ -82,7 +82,7 @@
     width: calc(100% - 3rem);
     left: 50%;
     transform: translateX(-50%);
-    background: $white;
+    background: rgba(255, 255, 255, 0.75);
     margin-top: 1.5rem;
     padding: 1.625rem;
     border-radius: 5px;
@@ -90,7 +90,7 @@
     a {
       display: block;
       padding: 0.625rem;
-      color: $footerColor;
+      color: $black;
       text-align: center;
     }
   }

@@ -77,7 +77,7 @@
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 75%;
   }
 }
 
@@ -86,7 +86,7 @@
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 75%;
   }
 }
 
@@ -95,7 +95,7 @@
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 55%;
   }
 }
 
@@ -104,7 +104,7 @@
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 55%;
   }
 }
 
@@ -113,7 +113,7 @@
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 80%;
   }
 }
 
@@ -122,7 +122,7 @@
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 80%;
   }
 }
 
@@ -149,7 +149,7 @@
     width: 0%;
   }
   100% {
-    width: 30%;
+    width: 70%;
   }
 }
 
@@ -158,7 +158,7 @@
     width: 0%;
   }
   100% {
-    width: 30%;
+    width: 70%;
   }
 }
 
@@ -167,7 +167,7 @@
     width: 0%;
   }
   100% {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -176,7 +176,7 @@
     width: 0%;
   }
   100% {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -185,7 +185,7 @@
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 50%;
   }
 }
 
@@ -194,7 +194,7 @@
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 50%;
   }
 }
 
@@ -687,8 +687,8 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#070838), to(transparent));
-  background-image: linear-gradient(#070838, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(#070838), to(transparent));
+  background: linear-gradient(#070838, transparent);
 }
 
 .header nav {
@@ -733,7 +733,7 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: white;
+  background: rgba(255, 255, 255, 0.75);
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 5px;
@@ -742,7 +742,7 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
 .header__menu a {
   display: block;
   padding: 0.625rem;
-  color: #070838;
+  color: black;
   text-align: center;
 }
 
@@ -833,7 +833,7 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/images/hacker.jpg");
+  background-image: url("/files/images/hacker.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -1122,6 +1122,10 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
           transform: translateY(0.6rem);
 }
 
+.skills p {
+  margin-left: 20px;
+}
+
 .skills .skills-bar {
   background: #fafafa;
   display: block;
@@ -1148,19 +1152,19 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
 }
 
 .skills .bar_1 {
-  width: 70%;
+  width: 75%;
   -webkit-animation: bar1 2s forwards;
           animation: bar1 2s forwards;
 }
 
 .skills .bar_2 {
-  width: 80%;
+  width: 55%;
   -webkit-animation: bar2 2s forwards;
           animation: bar2 2s forwards;
 }
 
 .skills .bar_3 {
-  width: 40%;
+  width: 80%;
   -webkit-animation: bar3 2s forwards;
           animation: bar3 2s forwards;
 }
@@ -1172,19 +1176,19 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
 }
 
 .skills .bar_5 {
-  width: 30%;
+  width: 70%;
   -webkit-animation: bar5 2s forwards;
           animation: bar5 2s forwards;
 }
 
 .skills .bar_6 {
-  width: 50%;
+  width: 40%;
   -webkit-animation: bar6 2s forwards;
           animation: bar6 2s forwards;
 }
 
 .skills .bar_7 {
-  width: 90%;
+  width: 50%;
   -webkit-animation: bar7 2s forwards;
           animation: bar7 2s forwards;
 }
@@ -1545,7 +1549,7 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo btntop cta" "social btntop copyright";
+        grid-template-areas: "logo btntop cv" "social btntop copyright";
     gap: 1rem;
     justify-items: start;
   }
@@ -1653,21 +1657,25 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
   color: #7bff00;
 }
 
-.footer__cta {
+.footer__cv {
   z-index: 0;
 }
 
 @media (min-width: 64em) {
-  .footer__cta {
-    grid-area: cta;
+  .footer__cv {
+    grid-area: cv;
     text-align: right;
     -ms-grid-column-align: end;
         justify-self: end;
   }
 }
 
+.footer__cv a:not(:last-child) {
+  margin-right: 10px;
+}
+
 @media (max-width: 63.9375em) {
-  .footer__cta a.button {
+  .footer__cv a.button {
     margin-bottom: 1.875rem;
   }
 }
