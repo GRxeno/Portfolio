@@ -803,92 +803,39 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 
-.hero__image {
+.hero__image img {
+  z-index: 0;
   position: relative;
   width: 100%;
-  min-height: 17.5rem;
-}
-
-@media (min-width: 64em) {
-  .hero__image {
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    height: 41rem;
-    background-image: none;
-  }
-}
-
-.hero__image::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("./files/images/hacker.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+  aspect-ratio: 1;
 }
 
 @media (min-width: 40em) {
-  .hero__image::after {
-    background-size: 50%;
+  .hero__image img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 50%;
   }
 }
 
 @media (min-width: 64em) {
-  .hero__image::after {
+  .hero__image img {
     width: 120%;
-    height: 120%;
-    background-size: 95%;
-    background-position: center 150%;
-    left: 40%;
+    top: 180px;
+    right: auto;
   }
 }
 
-.hero__text h1 {
+.hero__text h1, .hero__text ul, .hero__text p {
   color: white;
-}
-
-.hero__text p {
-  color: white;
-}
-
-.hero__text ul {
-  color: white;
-}
-
-@media (min-width: 64em) {
-  .hero__text {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    text-align: left;
-  }
-}
-
-@media (max-width: 63.9375em) {
-  .hero__text {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    text-align: left;
-  }
 }
 
 .hero .check-list {
