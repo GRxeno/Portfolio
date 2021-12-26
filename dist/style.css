@@ -1071,6 +1071,7 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
 
 .skills p {
   margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .skills .skills-bar {
