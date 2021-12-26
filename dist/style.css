@@ -95,7 +95,7 @@
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 65%;
   }
 }
 
@@ -104,7 +104,7 @@
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 65%;
   }
 }
 
@@ -1106,7 +1106,7 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
 }
 
 .skills .bar_2 {
-  width: 55%;
+  width: 65%;
   -webkit-animation: bar2 2s forwards;
           animation: bar2 2s forwards;
 }
