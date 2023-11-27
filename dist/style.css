@@ -43,7 +43,7 @@
     width: 0%;
   }
   100% {
-    width: 75%;
+    width: 95%;
   }
 }
 @keyframes bar2 {
@@ -51,7 +51,7 @@
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 75%;
   }
 }
 @keyframes bar3 {
@@ -59,7 +59,7 @@
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 90%;
   }
 }
 @keyframes bar4 {
@@ -67,7 +67,7 @@
     width: 0%;
   }
   100% {
-    width: 60%;
+    width: 85%;
   }
 }
 @keyframes bar5 {
@@ -799,19 +799,19 @@ button:hover::after, button:focus::after, .button:hover::after, .button:focus::a
   background: #401492;
 }
 .skills .bar_1 {
-  width: 75%;
+  width: 95%;
   animation: bar1 2s forwards;
 }
 .skills .bar_2 {
-  width: 65%;
+  width: 75%;
   animation: bar2 2s forwards;
 }
 .skills .bar_3 {
-  width: 80%;
+  width: 90%;
   animation: bar3 2s forwards;
 }
 .skills .bar_4 {
-  width: 60%;
+  width: 85%;
   animation: bar4 2s forwards;
 }
 .skills .bar_5 {
