@@ -1,0 +1,68 @@
+PROJECT IDEAS FOR AN AEROSPACE SOFTWARE PORTFOLIO
+(private notes, not linked from the website)
+==================================================
+
+Goal: show flight-software skills: reliable embedded C/C++, real-time
+behavior, space protocols (CCSDS / ECSS PUS) and testing.
+
+BEST VALUE FOR EFFORT
+---------------------
+
+1. Mini flight-software app on an STM32 with an RTOS
+   - FreeRTOS or Zephyr on an STM32 dev board.
+   - Periodic tasks, a command handler, housekeeping telemetry.
+   - Fault detection and recovery state machine (boot -> nominal -> safe mode).
+   - Deliver: README, architecture diagram, short demo video.
+   - Why: closest proof of what you did on the AcubeSAT OBC, as public code.
+
+2. CCSDS space packet + ECSS PUS library
+   - Clean, tested C++ (or C) library: encode/decode CCSDS space packets,
+     a few PUS services (housekeeping, event reporting), CRC.
+   - Unit tests, CI, small example program.
+   - Why: finishable in a few weekends and speaks directly to ECSS on your CV.
+   - Tip: if this already exists in the AcubeSAT open-source code, link it and
+     write about your part instead.
+
+3. Ground-station telemetry viewer in Qt
+   - Read packets from a serial port or file, decode them (use project 2),
+     show live plots and an event log.
+   - Why: uses your Siemens C++/Qt skills in a space context.
+   - Pairs with 1 and 2 for a full "satellite to ground" story.
+
+STRONG SECOND TIER
+------------------
+
+4. Orbit propagator with visualization
+   - SGP4 or a simple two-body model in C++ or Python.
+   - Show a ground track or pass prediction for Thessaloniki.
+   - Why: shows you understand the domain, and looks great on a portfolio.
+
+5. Secure bootloader / firmware update demo
+   - Build on your thesis (STM32, TrustZone, TF-M).
+   - Signed images, rollback protection, safe fallback image.
+   - Why: spacecraft cybersecurity is growing; turns the thesis into a project.
+
+6. Unit-tested, standards-aware C module
+   - Small library with MISRA C checks, static analysis, unit tests,
+     coverage numbers and CI on GitHub Actions.
+   - Why: few junior portfolios show this; signals you take reliability seriously.
+
+SUGGESTED ORDER
+---------------
+Do 1 and 3 (or 1 and 2) first. Add 6's tooling (tests, static analysis, CI)
+to every project as you go.
+
+MAKE EACH PROJECT HIRING-READY
+------------------------------
+[ ] README: problem, diagram, how to build and run, demo clip or screenshots
+[ ] Tests and a passing CI badge
+[ ] "What I learned / what I would do differently" section
+[ ] Honest scope: small and finished beats big and unfinished
+[ ] Pin the repo on GitHub and add an entry in projects.js
+
+WEEKEND PLAN TEMPLATE
+---------------------
+Day 1 morning : define scope in 5 bullet points, create repo, set up CI
+Day 1 afternoon: core functionality, first tests
+Day 2 morning : error handling, edge cases, more tests
+Day 2 afternoon: README, diagram, demo recording, publish
